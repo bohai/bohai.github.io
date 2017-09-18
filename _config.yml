@@ -1,0 +1,14 @@
+auto: true
+
+markdown: rdiscount
+
+highlighter: 'pygments'
+#paginate: 8
+permalink: /:title
+
+name: “Bohai's Blog”
+title: Bohai's blog
+description: Everything about Bohai.
+url: http://mukosame.github.io
+feed: /atom.xml
+author_info: <a href="http://bohai.github.io/">Bohai</a>
