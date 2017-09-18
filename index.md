@@ -6,7 +6,7 @@ layout: home
     <div class="section">
         <ul class="artical-cate">
             <li class="on"><a href="/"><span>技术</span></a></li>
-            <li style="text-align:center"><a href="/dump"><span>Dump</span></a></li>
+            <li style="text-align:center"><a href="/dump"><span>生活</span></a></li>
             <li style="text-align:right"><a href="/project"><span>Project</span></a></li>
         </ul>
 
