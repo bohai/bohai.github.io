@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Swarm、SwarmKit、Swarm mode 对比
+title: (译)Swarm、SwarmKit、Swarm mode 对比
 description: 对比Swarm、SwarmKit、Swarm mode的区别
-tags: [docker, swarm]
+tags:
+  - docker
+  - swarm
 published: true
-category: blog 
+category: blog
 ---
 
 ..  
@@ -16,9 +18,6 @@ category: blog
 
 本文系个人翻译，错漏之处请见谅。  
 
-====================================
-Swarm、SwarmKit、Swarm mode 对比
-====================================
 Docker1.12的一个重大特性是提供了swarm mode。Docker结合swarm从1.6开始支持容器编排。  
 Docker1.12发布前几周，docker还开源了swarmkit，一个用于编排分布式系统的项目。   
 这三个项目让人颇为困惑，这篇博客中我和大家一起看下他们的相似之处以及区别。    
