@@ -3,7 +3,7 @@ layout: post
 title: Swarm、SwarmKit、Swarm mode 对比
 description: 
 published: true
-category: docker 
+category: blog 
 ---
 
 ..  
