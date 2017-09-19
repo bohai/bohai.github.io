@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Swarm、SwarmKit、Swarm mode 对比
+title: (译)Swarm、SwarmKit、Swarm mode 对比
 description: 对比Swarm、SwarmKit、Swarm mode的区别
-tags: [docker, swarm]
+tags:
+  - docker
+  - swarm
 published: true
-category: blog 
+category: blog
 ---
 
 ..  
