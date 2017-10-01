@@ -9,7 +9,7 @@ tags:
 published: true
 category: blog
 ---
-欢迎转发，请注明原文地址http://bohai.github.io。
+欢迎转发，请注明原文地址：http://bohai.github.io。
 
 
 
