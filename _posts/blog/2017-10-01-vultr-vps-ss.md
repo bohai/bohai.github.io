@@ -29,7 +29,31 @@ vultr 还有一个值得称赞的地方，它支持使用支付宝。这样你�
 我选了 newyork 的机房，实际使用速度还是很满意的。基本上大部分时间，youtube 使用 720P 可以流畅观看。
 网页秒开无压力。
 
+vultr 还免费支持对虚拟机进行快照，这样你需要恢复的时候可以很快的进行恢复。 
+对虚拟机内进行 SS 安装配置，可以使用 SSH 客户端进行连接配置。比较常用的 Putty 啦。
+创建虚拟机过程比较简单，建议操作系统选择 centos7 。
 
+搭建 ShadowSocks
+===
+推荐看秋水逸冰的《Shadowsocks 一键安装脚本（四合一）》的安装教程。
+
+运行以下命令:
+{% highlight shell %}
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+{% highlight %}
+
+选择脚本（Python、R、Go、libev），任选一个，建议选择 Go ：
+
+{% highlight shell %}
+Which Shadowsocks server you'd select:
+1.Shadowsocks-Python
+2.ShadowsocksR
+3.Shadowsocks-Go
+4.Shadowsocks-libev
+Please enter a number (default 1):
+{% highlight %}
 
 参考：
 https://www.diycode.cc/topics/738
