@@ -24,7 +24,7 @@ category: blog
 
 >> 请务必使用这个链接，这样你我都会被赠送10美元。
 
-vultr 还有一个值得称赞的地方，它支持使用支付宝。这样你就不要使用国际信用卡或者 paypal 。
+vultr 还有一个值得称赞的地方，它支持使用支付宝。这样你就不需要使用国际信用卡或者 paypal 。
 虚拟机的创建非常简单，这里就不多说了。至于机房的选择，一般建议是 losangel ，但是最近这个机房一直没有资源。
 我选了 newyork 的机房，实际使用速度还是很满意的。基本上大部分时间，youtube 使用 720P 可以流畅观看。
 网页秒开无压力。
@@ -54,6 +54,55 @@ Which Shadowsocks server you'd select:
 4.Shadowsocks-libev
 Please enter a number (default 1):
 {% highlight %}
+
+笔者选择Shadowsocks-Go，输入3......然后，输入密码和端口，笔者直接回车用默认：
+{% highlight shell %}
+You choose = Shadowsocks-Go
+
+Please enter password for Shadowsocks-Go
+(default password: teddysun.com):
+
+password = teddysun.com
+
+Please enter a port for Shadowsocks-Go [1-65535]
+(default port: 8989):
+
+port = 8989
+
+
+Press any key to start...or Press Ctrl+C to cancel
+{% highlight %}
+
+安装成功后，命令行出现：
+{% highlight shell %}
+Congratulations, Shadowsocks-Go server install completed!
+Your Server IP        :  45.32.73.59
+Your Server Port      :  8989
+Your Password         :  teddysun.com
+Your Encryption Method:  aes-256-cfb
+
+Welcome to visit: https://teddysun.com/486.html
+Enjoy it!
+{% highlight %}
+
+TCP BBR 拥塞控制算法
+===
+TCP BBR算法是Google搞出来的玩意，没想到在翻墙上使用，效果出奇的好。
+整个网络的速度可以提高很多。
+
+使用root用户登录，运行以下命令：
+{% highlight shell %}
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+chmod +x bbr.sh
+./bbr.sh
+{% highlight %}
+
+安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。重启后，执行命令：
+{% highlight shell %}
+lsmod | grep bbr
+{% highlight %}
+
+TCP BBR要求Linux内核4.10以上。
 
 参考：
 https://www.diycode.cc/topics/738
