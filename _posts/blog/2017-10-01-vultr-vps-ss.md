@@ -38,25 +38,25 @@ vultr 还免费支持对虚拟机进行快照，这样你需要恢复的时候�
 推荐看秋水逸冰的《Shadowsocks 一键安装脚本（四合一）》的安装教程。
 
 运行以下命令:
-{% highlight shell %}
+``` shell
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
-{% highlight %}
+```
 
 选择脚本（Python、R、Go、libev），任选一个，建议选择 Go ：
 
-{% highlight shell %}
+``` shell
 Which Shadowsocks server you'd select:
 1.Shadowsocks-Python
 2.ShadowsocksR
 3.Shadowsocks-Go
 4.Shadowsocks-libev
 Please enter a number (default 1):
-{% highlight %}
+```
 
 笔者选择Shadowsocks-Go，输入3......然后，输入密码和端口，笔者直接回车用默认：
-{% highlight shell %}
+``` shell
 You choose = Shadowsocks-Go
 
 Please enter password for Shadowsocks-Go
@@ -71,10 +71,10 @@ port = 8989
 
 
 Press any key to start...or Press Ctrl+C to cancel
-{% highlight %}
+```
 
 安装成功后，命令行出现：
-{% highlight shell %}
+``` shell
 Congratulations, Shadowsocks-Go server install completed!
 Your Server IP        :  45.32.73.59
 Your Server Port      :  8989
@@ -83,7 +83,7 @@ Your Encryption Method:  aes-256-cfb
 
 Welcome to visit: https://teddysun.com/486.html
 Enjoy it!
-{% highlight %}
+```
 
 TCP BBR 拥塞控制算法
 ===
@@ -91,16 +91,16 @@ TCP BBR算法是Google搞出来的玩意，没想到在翻墙上使用，效果�
 整个网络的速度可以提高很多。
 
 使用root用户登录，运行以下命令：
-{% highlight shell %}
+``` shell
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 chmod +x bbr.sh
 ./bbr.sh
-{% highlight %}
+```
 
 安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。重启后，执行命令：
-{% highlight shell %}
+``` shell
 lsmod | grep bbr
-{% highlight %}
+```
 
 TCP BBR要求Linux内核4.10以上。
 
