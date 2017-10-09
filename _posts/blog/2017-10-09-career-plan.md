@@ -1,6 +1,6 @@
 ---
 layout: post
-title: <转> 九项重要的职业规划提示
+title: (转) 九项重要的职业规划提示
 description: 九项重要的职业规划提示
 tags:
   - career
